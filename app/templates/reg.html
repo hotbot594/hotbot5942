@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>Login</h1>
+
+
+<form method="post">
+    <p>{{ form.username.label }}<br>{{ form.username(size=32) }}</p>
+    <p>{{ form.password.label }}<br>{{ form.password(size=32) }}</p>
+    <p>{{ form.password2.label }}<br>{{ form.password2(size=32) }}</p>
+    <p>{{ form.email.label }}<br>{{ form.email(size=32) }}</p>
+    <p>{{ form.submit.label }}<br>{{ form.submit(size=32) }}</p>
+    <p>{{ form.remember.label }}<br>{{ form.remember(size=32) }}</p>
+</form>
+
+{% endblock %}
